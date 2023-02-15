@@ -19,3 +19,14 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+function filterDogOwers(users) {
+  for (let i = 0; i < users.length; i++) {
+
+    if (users[i].hasDog === true) {
+      console.log(users[i])
+    }
+  }
+}
+
+filterDogOwers(users)
