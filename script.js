@@ -20,13 +20,25 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
 
+console.log("------------function filterDogOwers------------------")
+
 function filterDogOwers(users) {
   for (let i = 0; i < users.length; i++) {
 
     if (users[i].hasDog === true) {
-      console.log(users[i])
+      // console.log(users[i])
+      console.log(`${users[i].name} turi augintinį (${users[i].hasDog})`)
     }
   }
+};
+
+filterDogOwers(users);
+
+console.log("------------function filterAdults------------------")
+
+
+function filterAdults(users) {
+  users.filter(user => user.age >= 18).map(user => console.log(`Asmuo ${user.name} yra ${user.age} metų`))
 }
 
-filterDogOwers(users)
+filterAdults(users)
