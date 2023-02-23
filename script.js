@@ -23,14 +23,14 @@ const users = [
 console.log("------------function filterDogOwers------------------")
 
 function filterDogOwers(array) {
-//   for (let i = 0; i < users.length; i++) {
+  for (let i = 0; i < users.length; i++) {
 
-//     if (users[i].hasDog === true) {
-//       // console.log(users[i])
-//       return `${users[i].name} turi augintinį (${users[i].hasDog})`
-//     }
-//   }
-  return array.filter((user) => user.hasDog)
+    if (users[i].hasDog === true) {
+      // console.log(users[i])
+      return (`${users[i].name} turi augintinį (${users[i].hasDog})`)
+    }
+  }
+//   return array.filter((user) => user.hasDog)
 };
 
 console.log(filterDogOwers(users));
