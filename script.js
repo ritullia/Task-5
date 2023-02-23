@@ -33,7 +33,7 @@ function filterDogOwers(array) {
   return array.filter((user) => user.hasDog)
 };
 
-filterDogOwers(users);
+console.log(filterDogOwers(users));
 
 console.log("------------function filterAdults------------------")
 
