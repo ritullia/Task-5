@@ -22,14 +22,15 @@ const users = [
 
 console.log("------------function filterDogOwers------------------")
 
-function filterDogOwers(users) {
-  for (let i = 0; i < users.length; i++) {
+function filterDogOwers(array) {
+//   for (let i = 0; i < users.length; i++) {
 
-    if (users[i].hasDog === true) {
-      // console.log(users[i])
-      return `${users[i].name} turi augintinį (${users[i].hasDog})`
-    }
-  }
+//     if (users[i].hasDog === true) {
+//       // console.log(users[i])
+//       return `${users[i].name} turi augintinį (${users[i].hasDog})`
+//     }
+//   }
+  return array.filter((user) => user.hasDog)
 };
 
 filterDogOwers(users);
@@ -37,8 +38,8 @@ filterDogOwers(users);
 console.log("------------function filterAdults------------------")
 
 
-function filterAdults(users) {
-  return users.filter(user => user.age >= 18).map(user => console.log(`Asmuo ${user.name} yra ${user.age} metų`))
+function filterAdults(array) {
+  return array.filter(user => user.age >= 18).map(user => console.log(`Asmuo ${user.name} yra ${user.age} metų`))
 }
 
 filterAdults(users)
