@@ -27,7 +27,7 @@ function filterDogOwers(users) {
 
     if (users[i].hasDog === true) {
       // console.log(users[i])
-      console.log(`${users[i].name} turi augintinį (${users[i].hasDog})`)
+      return `${users[i].name} turi augintinį (${users[i].hasDog})`
     }
   }
 };
@@ -38,7 +38,7 @@ console.log("------------function filterAdults------------------")
 
 
 function filterAdults(users) {
-  users.filter(user => user.age >= 18).map(user => console.log(`Asmuo ${user.name} yra ${user.age} metų`))
+  return users.filter(user => user.age >= 18).map(user => console.log(`Asmuo ${user.name} yra ${user.age} metų`))
 }
 
 filterAdults(users)
